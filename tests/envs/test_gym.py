@@ -1,8 +1,6 @@
 import gym
 import pytest
 
-import highway_env
-
 envs = [
     "highway-v0",
     "merge-v0",
@@ -29,4 +27,3 @@ def test_env_step(env_spec):
         obs, reward, terminated, truncated, info = env.step(action)
         assert env.observation_space.contains(obs)
     env.close()
-

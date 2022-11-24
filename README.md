@@ -215,12 +215,12 @@ List of publications & preprints using `highway-env` (please open a pull request
 *   [Robust Predictable Control](https://arxiv.org/abs/2109.03214) (Sep 2021)
 *   [Improving Robustness of Deep Reinforcement Learning Agents: Environment Attack based on the Critic Network](https://ieeexplore.ieee.org/document/9892901) (Jul 2022)
 
-PhD theses
+PhD Thesis
 *   [Reinforcement learning for Dialogue Systems optimization with user adaptation](https://hal.inria.fr/tel-02422691/) (2019)
 *   [Safe and Efficient Reinforcement Learning for Behavioural Planning in Autonomous Driving](https://hal.inria.fr/tel-03035705/) (2020)
 *   [Many-agent Reinforcement Learning](https://discovery.ucl.ac.uk/id/eprint/10124273/) (2021)
 
-Master theses
+Master Thesis
 *   [Multi-Agent Reinforcement Learning with Application on Traffic Flow Control](https://www.diva-portal.org/smash/get/diva2:1573441/FULLTEXT01.pdf) (Jun 2021)
 *   [Deep Reinforcement Learning for Automated Parking](https://repositorio-aberto.up.pt/bitstream/10216/136074/2/494682.pdf) (Aug 2021)
 

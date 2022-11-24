@@ -1,13 +1,12 @@
-import pytest
 import timeit
-import gym
 
-import highway_env
+import gym
 
 
 def wrapper(func, *args, **kwargs):
     def wrapped():
         return func(*args, **kwargs)
+
     return wrapped
 
 
@@ -24,14 +23,14 @@ def test_running_time(repeat=1):
     for env_name, steps in [
         ("highway-v0", 10),
         ("highway-fast-v0", 10),
-        ("parking-v0", 20)
+        ("parking-v0", 20),
     ]:
         env_time = wrapper(time_env, env_name, steps)
         time_spent = timeit.timeit(env_time, number=repeat) / repeat
         env = gym.make(env_name)
         time_simulated = steps / env.unwrapped.config["policy_frequency"]
         real_time_ratio = time_simulated / time_spent
-        print("Real time ratio for {}: {}".format(env_name, real_time_ratio))
+        print(f"Real time ratio for {env_name}: {real_time_ratio}")
         assert real_time_ratio > 0.5  # let's not be too ambitious for now
 
 
